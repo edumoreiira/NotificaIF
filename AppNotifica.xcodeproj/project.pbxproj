@@ -16,6 +16,10 @@
 		E4F2BBD72C53CC5B002B5434 /* AppNotificaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F2BBD62C53CC5B002B5434 /* AppNotificaTests.swift */; };
 		E4F2BBE12C53CC5B002B5434 /* AppNotificaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F2BBE02C53CC5B002B5434 /* AppNotificaUITests.swift */; };
 		E4F2BBE32C53CC5B002B5434 /* AppNotificaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F2BBE22C53CC5B002B5434 /* AppNotificaUITestsLaunchTests.swift */; };
+		E4F2BBF02C53D66B002B5434 /* Cordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F2BBEF2C53D66B002B5434 /* Cordinator.swift */; };
+		E4F2BBF22C53D72A002B5434 /* LoginCordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F2BBF12C53D72A002B5434 /* LoginCordinator.swift */; };
+		E4F2BBF42C53D96F002B5434 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F2BBF32C53D96F002B5434 /* LoginViewController.swift */; };
+		E4F2BBF62C53DA29002B5434 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F2BBF52C53DA29002B5434 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		E4F2BBDC2C53CC5B002B5434 /* AppNotificaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppNotificaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F2BBE02C53CC5B002B5434 /* AppNotificaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotificaUITests.swift; sourceTree = "<group>"; };
 		E4F2BBE22C53CC5B002B5434 /* AppNotificaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotificaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E4F2BBEF2C53D66B002B5434 /* Cordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cordinator.swift; sourceTree = "<group>"; };
+		E4F2BBF12C53D72A002B5434 /* LoginCordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCordinator.swift; sourceTree = "<group>"; };
+		E4F2BBF32C53D96F002B5434 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E4F2BBF52C53DA29002B5434 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,10 @@
 				E4F2BBC82C53CC5A002B5434 /* Assets.xcassets */,
 				E4F2BBCA2C53CC5A002B5434 /* LaunchScreen.storyboard */,
 				E4F2BBCD2C53CC5A002B5434 /* Info.plist */,
+				E4F2BBEF2C53D66B002B5434 /* Cordinator.swift */,
+				E4F2BBF12C53D72A002B5434 /* LoginCordinator.swift */,
+				E4F2BBF32C53D96F002B5434 /* LoginViewController.swift */,
+				E4F2BBF52C53DA29002B5434 /* LoginView.swift */,
 			);
 			path = AppNotifica;
 			sourceTree = "<group>";
@@ -258,6 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4F2BBF42C53D96F002B5434 /* LoginViewController.swift in Sources */,
+				E4F2BBF62C53DA29002B5434 /* LoginView.swift in Sources */,
+				E4F2BBF02C53D66B002B5434 /* Cordinator.swift in Sources */,
+				E4F2BBF22C53D72A002B5434 /* LoginCordinator.swift in Sources */,
 				E4F2BBC42C53CC4F002B5434 /* ViewController.swift in Sources */,
 				E4F2BBC02C53CC4F002B5434 /* AppDelegate.swift in Sources */,
 				E4F2BBC22C53CC4F002B5434 /* SceneDelegate.swift in Sources */,
