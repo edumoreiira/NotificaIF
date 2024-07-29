@@ -8,5 +8,5 @@
 import Foundation
 
 protocol Cordinator {
-    func start()
+    func start()                                     
 }
