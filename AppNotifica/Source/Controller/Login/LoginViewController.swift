@@ -9,8 +9,15 @@ import Foundation
 import UIKit
 
 class LoginViewController: UIViewController {
+    var onRegisterTap: (() -> Void)?
     //cria uma variável que é do tipo LoginView
-    var viewMain = LoginView()
+    lazy var viewMain: LoginView = {
+        let loginView = LoginView()
+        loginView.onRegisterTap = self.onRegisterTap
+       
+        return loginView
+    }()
+    
     
        override func loadView(){
            self.view = viewMain
@@ -19,8 +26,7 @@ class LoginViewController: UIViewController {
     // é executado quando está carregando
        override func viewDidLoad() {
            super.viewDidLoad()
-        self.title = "Logar"
-           
+           self.title = "Logar"
            self.navigationController?.navigationBar.prefersLargeTitles=true
 
        }

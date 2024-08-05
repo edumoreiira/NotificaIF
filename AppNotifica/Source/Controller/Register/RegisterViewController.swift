@@ -11,8 +11,25 @@ import Foundation
 import UIKit
 
 class RegisterViewController: UIViewController {
+    
+    var onLogarTap: (() -> Void)?
     //cria uma variável que é do tipo LoginView
-    var viewMain = RegisterView()
+    lazy var viewMain: RegisterView = {
+        let registerView = RegisterView()
+//         registerView.onLogarTap = self.onLogarTap
+        
+        registerView.onLogarTap = { [weak self] in
+            if let self = self {
+                self.onLogarTap?()
+            }
+        }
+        return registerView
+    }()
+    
+    deinit {
+        print("Saindo de \(Self.self)")
+    }
+    
     
        override func loadView(){
            self.view = viewMain
@@ -20,10 +37,9 @@ class RegisterViewController: UIViewController {
        
     // é executado quando está carregando
        override func viewDidLoad() {
-           super.viewDidLoad()
+        super.viewDidLoad()
         self.title = "Registrar"
-           
-           self.navigationController?.navigationBar.prefersLargeTitles=true
+        self.navigationController?.navigationBar.prefersLargeTitles=true
 
        }
 

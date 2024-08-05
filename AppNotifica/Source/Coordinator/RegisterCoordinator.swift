@@ -24,7 +24,12 @@ class RegisterCoordinator: Coordinator {
 
       func start() {
         let viewController = RegisterViewController()
-            self.navigationController.pushViewController(viewController, animated: true)
+        viewController.onLogarTap = gotoLogar
+        self.navigationController.pushViewController(viewController, animated: true)
 
+    }
+    
+    func gotoLogar() {
+        navigationController.popViewController(animated: true)
     }
 }

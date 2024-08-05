@@ -15,13 +15,19 @@ class LoginCoordinator: Coordinator {
     
     //cria um construtor para incializar meu navationCrontroller
     init (navigationController: UINavigationController ) {
-            self.navigationController = navigationController
-     
-        }
-
-      func start() {
+        self.navigationController = navigationController
+        
+    }
+    
+    func start() {
         let viewController = LoginViewController()
-            self.navigationController.pushViewController(viewController, animated: true)
-
+        viewController.onRegisterTap = gotoRegister
+        self.navigationController.pushViewController(viewController, animated: true)
+        
+    }
+    
+    func gotoRegister() {
+        let cordinator = RegisterCoordinator(navigationController: navigationController)
+        cordinator.start()
     }
 }
