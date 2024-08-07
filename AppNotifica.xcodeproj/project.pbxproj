@@ -31,7 +31,8 @@
 		41994E2628FFFC37009591C4 /* LabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41994E2528FFFC37009591C4 /* LabelDefault.swift */; };
 		E4AB8D3C2C63A24500FEB475 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AB8D3B2C63A24500FEB475 /* HomeView.swift */; };
 		E4AB8D3E2C63A25500FEB475 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AB8D3D2C63A25500FEB475 /* HomeViewController.swift */; };
-		E4AB8D402C63AAA600FEB475 /* HomeCordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AB8D3F2C63AAA600FEB475 /* HomeCordinator.swift */; };
+		E4AB8D402C63AAA600FEB475 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AB8D3F2C63AAA600FEB475 /* HomeCoordinator.swift */; };
+		E4AB8D422C63B2D000FEB475 /* ViewControllerDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AB8D412C63B2D000FEB475 /* ViewControllerDefault.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +81,8 @@
 		41994E2528FFFC37009591C4 /* LabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDefault.swift; sourceTree = "<group>"; };
 		E4AB8D3B2C63A24500FEB475 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E4AB8D3D2C63A25500FEB475 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		E4AB8D3F2C63AAA600FEB475 /* HomeCordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCordinator.swift; sourceTree = "<group>"; };
+		E4AB8D3F2C63AAA600FEB475 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		E4AB8D412C63B2D000FEB475 /* ViewControllerDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDefault.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,7 +206,7 @@
 				415DFB4C28FD604000D249D1 /* LoginCoordinator.swift */,
 				415DFB4D28FD604000D249D1 /* Coordinator.swift */,
 				4177CC4229013CE8001E2621 /* RegisterCoordinator.swift */,
-				E4AB8D3F2C63AAA600FEB475 /* HomeCordinator.swift */,
+				E4AB8D3F2C63AAA600FEB475 /* HomeCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -234,6 +236,7 @@
 				415C11DB29000F9A0076ABED /* TextFieldDefault.swift */,
 				415C11DD290017470076ABED /* ButtonDefault.swift */,
 				415C11DF29001A310076ABED /* ImageDefault.swift */,
+				E4AB8D412C63B2D000FEB475 /* ViewControllerDefault.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 			files = (
 				415DFB5128FD604000D249D1 /* Coordinator.swift in Sources */,
 				415DFB4F28FD604000D249D1 /* LoginViewController.swift in Sources */,
+				E4AB8D422C63B2D000FEB475 /* ViewControllerDefault.swift in Sources */,
 				41239E8F28F840EA00D92C31 /* ViewController.swift in Sources */,
 				4177CC3F29013CB6001E2621 /* RegisterView.swift in Sources */,
 				415DFB5028FD604000D249D1 /* LoginCoordinator.swift in Sources */,
@@ -391,7 +395,7 @@
 				41239E9528F840EB00D92C31 /* AppNotifica.xcdatamodeld in Sources */,
 				415C11DE290017470076ABED /* ButtonDefault.swift in Sources */,
 				415C11DC29000F9A0076ABED /* TextFieldDefault.swift in Sources */,
-				E4AB8D402C63AAA600FEB475 /* HomeCordinator.swift in Sources */,
+				E4AB8D402C63AAA600FEB475 /* HomeCoordinator.swift in Sources */,
 				415C11DA290008210076ABED /* UIcolor+.swift in Sources */,
 				415C11E029001A310076ABED /* ImageDefault.swift in Sources */,
 				4177CC4329013CE8001E2621 /* RegisterCoordinator.swift in Sources */,

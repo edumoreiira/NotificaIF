@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class HomeCordinator: Coordinator {
+class HomeCoordinator: Coordinator {
     
     //faço com que todas as telas que usarem o LoginCoordinator impremente
     //o navigation controller. Senão todos todas as vezes teria que instãnciá-lo

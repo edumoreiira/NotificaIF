@@ -10,7 +10,7 @@ import Foundation
 import Foundation
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: ViewControllerDefault {
     
     var onLogarTap: (() -> Void)?
     //cria uma variável que é do tipo LoginView

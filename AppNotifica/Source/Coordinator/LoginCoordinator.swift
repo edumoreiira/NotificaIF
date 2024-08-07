@@ -22,6 +22,7 @@ class LoginCoordinator: Coordinator {
     func start() {
         let viewController = LoginViewController()
         viewController.onRegisterTap = gotoRegister
+        viewController.onLoginTap = gotoLogin
         self.navigationController.pushViewController(viewController, animated: true)
         
     }
@@ -32,7 +33,7 @@ class LoginCoordinator: Coordinator {
     }
     
     func gotoLogin() {
-        let cordinator = RegisterCoordinator(navigationController: navigationController)
-        cordinator
+        let cordinator = HomeCoordinator(navigationController: navigationController)
+        cordinator.start()
     }
 }

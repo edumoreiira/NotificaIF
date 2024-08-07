@@ -7,7 +7,7 @@
 import Foundation
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: ViewControllerDefault {
     
     //cria uma variável que é do tipo LoginView
     lazy var viewMain: HomeView = {
