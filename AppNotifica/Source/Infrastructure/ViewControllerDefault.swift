@@ -14,5 +14,14 @@ class ViewControllerDefault: UIViewController {
         super.viewDidLoad()
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationItem.setHidesBackButton(true, animated: false)
+        
+        // faz com que o teclado desapareca clicando em qualquer lugar da view
+        let tap: UIGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboardByTappingOutside))
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc
+    private func hideKeyboardByTappingOutside() {
+        view.endEditing(true)
     }
 }

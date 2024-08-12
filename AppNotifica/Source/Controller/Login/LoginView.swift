@@ -8,16 +8,8 @@
 import Foundation
 import UIKit
 
-class LoginView: UIView {
-    //MARK: - Initialize
-        override init(frame: CGRect) {
-            //chama o frame da superclasse
-            super.init(frame: frame)
-            // muda a cor de fundo do app para branco
-            self.backgroundColor = .viewBackGroundColor
-            setupVisualElements()
-            
-        }
+class LoginView: ViewDefault {
+
     
     //MARK: - Closures
     var onRegisterTap: (() -> Void)?
@@ -31,10 +23,17 @@ class LoginView: UIView {
     var imageLabel = LabelDefault(text: "Registre e gerencie as ocorrências do seu IF", font: UIFont.systemFont(ofSize: 17, weight: .regular))
     
     //cria a função com as propriadades da text no login
-    var emailTextField = TextFieldDefault (placeholder: "E-mail")
+    var emailTextField = TextFieldDefault (placeholder: "E-mail", keyboardType: .emailAddress, returnKeyType: .next)
     
     //cria a função com as propriadades da text no login
-    var senhaTextField = TextFieldDefault (placeholder: "Senha")
+    var senhaTextField: TextFieldDefault = {
+        let textField = TextFieldDefault (placeholder: "Senha", keyboardType: .emailAddress, returnKeyType: .done)
+        textField.isSecureTextEntry = true
+        
+        return textField
+        
+    }()
+    
     
     //cria a função com as propriadades da butao no logor
     var buttonLogar = ButtonDefault(botao: "LOGAR")
@@ -43,7 +42,8 @@ class LoginView: UIView {
     var buttonRegistrar = ButtonDefault(botao: "REGISTRAR")
         
     
-    func setupVisualElements() {
+    override func setupVisualElements() {
+        super.setupVisualElements()
         self.addSubview(imageLogin)
         self.addSubview(imageLabel)
         self.addSubview(emailTextField)
@@ -51,8 +51,12 @@ class LoginView: UIView {
         self.addSubview(buttonLogar)
         self.addSubview(buttonRegistrar)
         
+        emailTextField.delegate = self
+        senhaTextField.delegate = self
+        
         buttonRegistrar.addTarget(self, action: #selector(registerTap), for: .touchUpInside)
         buttonLogar.addTarget(self, action: #selector(loginTap), for: .touchUpInside)
+        
         
         NSLayoutConstraint.activate([
         
@@ -106,8 +110,16 @@ class LoginView: UIView {
         onLoginTap?()
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+}
+
+extension LoginView: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == emailTextField {
+            senhaTextField.becomeFirstResponder()
+        } else {
+            senhaTextField.resignFirstResponder()
+        }
+        
+        return true
     }
-    
 }
