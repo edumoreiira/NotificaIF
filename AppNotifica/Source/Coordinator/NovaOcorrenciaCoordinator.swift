@@ -8,16 +8,16 @@
 import Foundation
 import UIKit
 
-class HomeCoordinator: Coordinator {
+class NovaOcorrenciaCoordinator: Coordinator {
     
     //faço com que todas as telas que usarem o LoginCoordinator impremente
     //o navigation controller. Senão todos todas as vezes teria que instãnciá-lo
     var navigationController: UINavigationController
     
-    lazy var homeViewController: HomeViewController = {
-        let viewController = HomeViewController()
-        viewController.tabBarItem.title = "Home"
-        viewController.tabBarItem.image = UIImage(systemName: "homekit")
+    lazy var novaOcorrenciaViewController: NovaOcorrenciaViewController = {
+        let viewController = NovaOcorrenciaViewController()
+        viewController.tabBarItem.title = "Nova Ocorrência"
+        viewController.tabBarItem.image = UIImage(systemName: "note.text.badge.plus")
         
         return viewController
     }()
