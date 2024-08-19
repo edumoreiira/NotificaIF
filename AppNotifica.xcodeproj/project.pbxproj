@@ -42,6 +42,8 @@
 		41CEB5FC2907E7390070C628 /* NovaOcorrenciaCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CEB5FB2907E7390070C628 /* NovaOcorrenciaCoordinator.swift */; };
 		41CEB5FE2907E7530070C628 /* SobreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CEB5FD2907E7530070C628 /* SobreView.swift */; };
 		41CEB6002907E7660070C628 /* SobreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CEB5FF2907E7660070C628 /* SobreViewController.swift */; };
+		E4C3FE8C2C73725B0049A763 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C3FE8B2C73725B0049A763 /* HomeViewModel.swift */; };
+		E4C3FE8E2C7372B20049A763 /* NovaOcorrenciaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C3FE8D2C7372B20049A763 /* NovaOcorrenciaViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,8 @@
 		41CEB5FB2907E7390070C628 /* NovaOcorrenciaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaOcorrenciaCoordinator.swift; sourceTree = "<group>"; };
 		41CEB5FD2907E7530070C628 /* SobreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreView.swift; sourceTree = "<group>"; };
 		41CEB5FF2907E7660070C628 /* SobreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreViewController.swift; sourceTree = "<group>"; };
+		E4C3FE8B2C73725B0049A763 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E4C3FE8D2C7372B20049A763 /* NovaOcorrenciaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaOcorrenciaViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +262,7 @@
 			children = (
 				4177CC452902BAD0001E2621 /* HomeView.swift */,
 				4177CC472902BAF4001E2621 /* HomeViewController.swift */,
+				E4C3FE8B2C73725B0049A763 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 			children = (
 				41CEB5F52907E6EB0070C628 /* NovaOcorrenciaView.swift */,
 				41CEB5F72907E7090070C628 /* NovaOcorrenciaViewController.swift */,
+				E4C3FE8D2C7372B20049A763 /* NovaOcorrenciaViewModel.swift */,
 			);
 			path = NovaOcorrencia;
 			sourceTree = "<group>";
@@ -445,6 +451,7 @@
 				41CEB5F62907E6EB0070C628 /* NovaOcorrenciaView.swift in Sources */,
 				4177CC482902BAF4001E2621 /* HomeViewController.swift in Sources */,
 				41239E8B28F840EA00D92C31 /* AppDelegate.swift in Sources */,
+				E4C3FE8C2C73725B0049A763 /* HomeViewModel.swift in Sources */,
 				4177CC4129013CC9001E2621 /* RegisterViewController.swift in Sources */,
 				41994E2628FFFC37009591C4 /* LabelDefault.swift in Sources */,
 				41239E9528F840EB00D92C31 /* AppNotifica.xcdatamodeld in Sources */,
@@ -453,6 +460,7 @@
 				415C11DE290017470076ABED /* ButtonDefault.swift in Sources */,
 				415C11DC29000F9A0076ABED /* TextFieldDefault.swift in Sources */,
 				415C11DA290008210076ABED /* UIcolor+.swift in Sources */,
+				E4C3FE8E2C7372B20049A763 /* NovaOcorrenciaViewModel.swift in Sources */,
 				41CEB5EF2907DBB40070C628 /* TabbarCoordinator.swift in Sources */,
 				415C11E029001A310076ABED /* ImageDefault.swift in Sources */,
 				4177CC4329013CE8001E2621 /* RegisterCoordinator.swift in Sources */,
